@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewVideoMedia"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/videotimetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textSize="20sp"
+            android:background="@drawable/videotextborder"
+            android:textAllCaps="true"
+            android:drawableLeft="@mipmap/ic_launcher"/>
+
+        <VideoView
+            android:id="@+id/videoViewVideoMedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/videotimetext"
+            android:layout_marginTop="62dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
+            />
+
+        <Button
+            android:id="@+id/buttonVideoDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="bottom|left"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:text="Download"
+            android:drawableLeft="@drawable/ic_file_download"/>
+
+        <Button
+            android:id="@+id/buttonVideoShare"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom|right"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="21dp"
+            android:text="Share"
+            android:drawableLeft="@drawable/ic_share"/>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewImageMedia"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/imagetimetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textSize="20sp"
+            android:background="@drawable/videotextborder"
+            android:textAllCaps="true"
+            android:drawableLeft="@mipmap/ic_launcher"/>
+
+        <ImageView
+            android:id="@+id/imageViewImageMedia"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="63dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/videotextborder"
+            />
+
+        <Button
+            android:id="@+id/buttonImageDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="bottom|left"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:text="Download"
+            android:drawableLeft="@drawable/ic_file_download"/>
+
+        <Button
+            android:id="@+id/buttonImageShare"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom|right"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="21dp"
+            android:text="Share"
+            android:drawableLeft="@drawable/ic_share"/>
+
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
